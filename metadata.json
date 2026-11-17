@@ -1,0 +1,10 @@
+{
+  "name": "E-san low Trip",
+  "description": "สมุดสะสมตราประทับดิจิทัล อุทยานแห่งชาติภาคตะวันออกเฉียงเหนือ 26 แห่ง พร้อมระบบบันทึกการเดินทางและซิงก์ข้อมูล Google Sheets",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
