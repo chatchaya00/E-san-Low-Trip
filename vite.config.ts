@@ -41,7 +41,7 @@ export default defineConfig(() => {
       },
     },
 
-    server: {
+server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       // Do not modify.
       hmr: process.env.DISABLE_HMR !== 'true',
@@ -49,24 +49,7 @@ export default defineConfig(() => {
       // Disable file watching when DISABLE_HMR is true.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
-
-    // Optimize JavaScript bundle size
-    build: {
-      rolldownOptions: {
-        output: {
-          codeSplitting: {
-            groups: [
-              {
-                name: 'vendor',
-                test: /node_modules[\\/]/,
-                minSize: 20 * 1024,
-                maxSize: 300 * 1024,
-                priority: 10,
-              },
-            ],
-          },
-        },
-      },
-    },
   };
 });
+
+
